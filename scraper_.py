@@ -66,7 +66,7 @@ if __name__ == "__main__":
                     if comment_element and len(comment_element)>0:
                         print("\n",comment_element.text.strip())
                         dic={'comment':comment_element,'url':url,'keyword':keyword}
-                        comments_list.append(comment_element)
+                        comments_list.append(dic)
                     #writer.writerow({'Title': title_element})
                     # writer.writerow({'Comments': comment_element})
                 except:
